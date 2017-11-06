@@ -22,8 +22,7 @@ RUN apk add --update unzip
 #
 # Install docker compose
 #
-RUN curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
-RUN chmod +x /usr/local/bin/docker-compose
+RUN pip install docker-compose
 
 #
 # Bootstrap folders which are usually setup using the `aws configure` command.
