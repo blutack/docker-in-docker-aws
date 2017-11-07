@@ -4,7 +4,7 @@ FROM docker:latest
 #
 # Install the AWS CLI using python/pip.
 #
-RUN apk add --no-cache --update python py-pip;
+RUN apk add --no-cache --update python py-pip python3;
 RUN pip install awscli --ignore-installed six;
 
 #
