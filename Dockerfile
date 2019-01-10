@@ -19,6 +19,11 @@ RUN npm install -g ecs-task-deploy
 RUN apk add --update curl
 RUN apk add --update unzip
 
+# Install fargate command
+RUN wget https://github.com/blutack/fargate/releases/download/v0.2.4/fargate
+RUN mv fargate /bin/fargate
+RUN chmod +x /bin/fargate
+
 #
 # Install docker compose
 #
