@@ -24,6 +24,9 @@ RUN wget https://github.com/blutack/fargate/releases/download/v0.2.4/fargate
 RUN mv fargate /bin/fargate
 RUN chmod +x /bin/fargate
 
+# Install gettext for envsubst
+RUN apk add --update gettext
+
 #
 # Install docker compose
 #
